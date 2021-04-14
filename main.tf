@@ -9,4 +9,5 @@ terraform {
 
 provider "github" {
   owner = "bovine-app"
+  token = var.github_token
 }
