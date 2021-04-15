@@ -15,7 +15,7 @@ resource "github_branch_protection" "web_default_branch" {
 
   allows_deletions    = false
   allows_force_pushes = false
-  enforce_admins      = true
+  enforce_admins      = false
 
   required_pull_request_reviews {
     dismiss_stale_reviews           = true
