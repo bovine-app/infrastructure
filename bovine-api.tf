@@ -25,3 +25,9 @@ resource "github_branch_protection" "api_default_branch" {
     required_approving_review_count = 1
   }
 }
+
+resource "github_actions_secret" "api_rails_master_key" {
+  repository      = github_repository.api.name
+  secret_name     = "RAILS_MASTER_KEY"
+  plaintext_value = var.api_rails_master_key
+}
