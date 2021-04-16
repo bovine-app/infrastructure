@@ -7,6 +7,8 @@ resource "github_repository" "infra" {
 
   auto_init              = false
   delete_branch_on_merge = true
+  has_issues             = true
+  has_wiki               = true
 }
 
 resource "github_branch_protection" "infra_default_branch" {

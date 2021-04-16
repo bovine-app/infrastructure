@@ -7,6 +7,8 @@ resource "github_repository" "api" {
 
   auto_init              = true
   delete_branch_on_merge = true
+  has_issues             = true
+  has_wiki               = true
 }
 
 resource "github_branch_protection" "api_default_branch" {

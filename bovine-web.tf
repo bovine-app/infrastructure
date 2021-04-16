@@ -7,6 +7,8 @@ resource "github_repository" "web" {
 
   auto_init              = true
   delete_branch_on_merge = true
+  has_issues             = true
+  has_wiki               = true
 }
 
 resource "github_branch_protection" "web_default_branch" {
